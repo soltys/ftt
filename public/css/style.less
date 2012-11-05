@@ -1,18 +1,21 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-
-a {
-  color: #00B7FF;
-}
-
+@link_color:   #23B7FF;
 /* Mixin */
 .border-radius (@radius: 5px) {
 	-webkit-border-radius: @radius;
 	-moz-border-radius: @radius;
 	border-radius: @radius;
 }
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: @link_color;
+}
+
+
  
 /* Implementation */
 #container {
