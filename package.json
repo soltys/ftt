@@ -1,15 +1,17 @@
 {
-  "name": "application-name",
+  "name": "Fast-Trello-Tools",
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node app"
+    "start": "node app",
+    "test" : "mocha test"
   },
   "dependencies": {
     "express": "3.0.1",
     "hjs": "*",
+    "jade": "*",
     "less-middleware": "*",
 	"mocha": "*",
 	"should": "*"
-  }
+  }  
 }

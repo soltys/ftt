@@ -1,2 +1,2 @@
-ftt
+FTT - Fast (Trello|Toggl) Tools
 ===
