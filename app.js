@@ -3,11 +3,14 @@
  * Module dependencies.
  */
 
-var express = require('express')
-  , routes = require('./routes')  
+var express = require('express')  
   , http = require('http')
   , path = require('path');
-
+var routes = {
+    home: require('./routes/home'),
+    trello: require('./routes/trello'),
+    toggl: require('./routes/toggl')
+};
 var app = express();
 
 app.configure(function(){
@@ -29,8 +32,9 @@ app.configure('development', function(){
   app.use(express.errorHandler());
 });
 
-app.get('/', routes.index);
-app.get('/add/:number1/:number2', routes.add);
+app.get('/', routes.home.index);
+app.get('/trello', routes.trello.index);
+app.get('/toggl', routes.toggl.index);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
