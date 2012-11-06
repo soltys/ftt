@@ -3,9 +3,9 @@ html(lang="en")
   head
     title= pageTitle
     link(href='/bootstrap/less/bootstrap.css', rel='stylesheet')
-    link(href='/bootstrap/less/bootstrap-responsive.css', rel='stylesheet')
+    link(href='/bootstrap/less/responsive.css', rel='stylesheet')
     link(href='/css/style.css', rel='stylesheet')
-    script(type='text/javascript')     
+    script(src='/js/ftt.ugly.js')     
   body
     .container-fluid
         h1 Home
@@ -14,3 +14,10 @@ html(lang="en")
                 a(href='/trello') Trello
             p
                 a(href='/toggl') Toggl
+            p
+                | asd
+                | wqr
+    script
+         (function() {
+           var ftt = new FTT(); 
+         })();

@@ -16,4 +16,5 @@ npm-debug.log
 
 
 #We using less so we don't need css
-.css
+*.css
+*.ugly.js
